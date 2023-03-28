@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.8634efe4.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.8ebbd519.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.515f0d26.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.5621f243.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.02becfe2.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.8b861ad3.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.f8856493.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/(posts)-_path_-_slug_-page.svelte.f5b1f45e.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<body><header><nav><div class="title"><a href="/">db&#39;Doodle</a></div>
+		<div class="links"><ul><li><a href="/about">ABOUT</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/ml">ML</a></li>
+				<li><a href="/cs">CS</a></li>
+				<li><a href="/tech">Tech</a></li></ul></div></nav></header>
+
+	<div class="contents"><div class="post-title"><h1>ML Overview</h1>
+		</div>
+	
+
+	<div class="metadata"><div class="metadata-img"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="110" height="80" viewBox="0 0 786.81995 572.25773" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="#f2f2f2"><circle cx="458.3" cy="74.2" r="26.7"></circle><path d="M665.4 497.2C705 467 724 416 712.2 367.7q-.4-1.8-1-3.6c-8-28.8-27.3-56-55.7-65.3-23.8-7.7-49.8-1.8-74.7-5-48.8-6-86.6-45.5-113.2-86.8s-47-87.6-82.4-121.7C327 29 232 17 159.7 53.6s-118.3 118-116.3 199 50 158.4 120 199.5c25.7 15 55.3 25.8 84.8 22 25.6-3.2 49-17 74.4-21 40-6.4 80 11.7 114.6 32.8s68.2 46.2 107.6 56c38.3 9.5 85.7-17.8 120.8-44.6z"></path></g><g fill="#3f3d56"><path d="M608.4 55.3l-2.6-1.7a380 380 0 0 0-80.3-38.9L519 105h-41.5V1.5l-8-1.5v105h-49.3C364 105 318 59 318 2.7h0l-8 1.8V105h-40l-6.2-86a381 381 0 0 0-81.9 43.5l-1.3 1L174 68v344.2h118.3l-2-29-11.5-159h231.6l-11.5 159-2 29h117V58.8q-2.6-1.8-5.2-3.5zM310.2 198h-33.4l-6.2-85.3h39.6zm159.4 0h-56v-1.7c0-1.6-.7-3.2-1.8-4.4s-2.7-1.8-4.4-1.8H383c-1.6 0-3.2.7-4.4 1.8s-1.8 2.7-1.8 4.4v1.7H318v-85.3h151.5zm8 0v-85.3h41l-6.2 85.3zM0 434.3a289 289 0 0 0 28.1 29l730.6 1a289 289 0 0 0 28.1-29z"></path><path d="M495.4 341.6v85.7c0 2.3 1.8 4 4 4h127c2.3 0 4-1.8 4-4v-85.7c0-2.3-1.8-4-4-4h-127c-2.3 0-4 1.8-4 4z"></path></g><path d="M498.4 342.7v83.6c0 1.2 1 2.2 2.2 2.2h125c1.2 0 2.2-1 2.2-2.2v-83.6c0-1.2-1-2.2-2.2-2.2h-125c-1.2 0-2.2 1-2.2 2.2z" fill="#6c63ff"></path><path d="M492.8 444c.5.6 1.2 1 2 1h136c.8 0 1.5-.3 2-1s.7-1.4.5-2l-2-10c-.2-.8-.8-1.5-1.6-1.8-.3-.1-.6-.2-1-.2H496.8c-.3 0-.6.1-1 .2-.8.3-1.4 1-1.6 1.8l-2 10c-.2.7 0 1.5.5 2z" fill="#2f2e41"></path><g fill="#3f3d56"><rect x="830" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1457.67 1029.82)"></rect><rect x="821.7" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1440.91 1029.82)"></rect><rect x="813.3" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1424.16 1029.82)"></rect><rect x="804.9" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1407.4 1029.82)"></rect><rect x="796.5" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1390.65 1029.82)"></rect><rect x="788.1" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1373.9 1029.82)"></rect><rect x="779.8" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1357.14 1029.82)"></rect><rect x="771.4" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1340.39 1029.82)"></rect><rect x="763" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1323.63 1029.82)"></rect><rect x="754.6" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1306.88 1029.82)"></rect><rect x="746.3" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1290.13 1029.82)"></rect><rect x="737.9" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1273.37 1029.82)"></rect><rect x="729.5" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1256.62 1029.82)"></rect><rect x="721.1" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1239.86 1029.82)"></rect><rect x="712.8" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1223.11 1029.82)"></rect><rect x="704.4" y="595.6" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1206.36 1029.82)"></rect><rect x="830.1" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1457.86 1038.2)"></rect><rect x="821.8" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1441.11 1038.2)"></rect><rect x="813.4" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1424.36 1038.2)"></rect><rect x="805" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1407.6 1038.2)"></rect><rect x="796.6" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1390.85 1038.2)"></rect><rect x="788.2" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1374.09 1038.2)"></rect><rect x="779.9" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1357.34 1038.2)"></rect><rect x="771.5" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1340.59 1038.2)"></rect><rect x="763.1" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1323.83 1038.2)"></rect><rect x="754.7" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1307.08 1038.2)"></rect><rect x="746.4" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1290.32 1038.2)"></rect><rect x="738" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1273.57 1038.2)"></rect><rect x="729.6" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1256.82 1038.2)"></rect><rect x="721.2" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1240.06 1038.2)"></rect><rect x="712.9" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1223.31 1038.2)"></rect><rect x="704.5" y="599.8" width="4.2" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1206.55 1038.2)"></rect><rect x="760.6" y="604.8" width="33.5" height="2.5" rx=".5" transform="matrix(-1 0 0 -1 1348.13 1048.25)"></rect></g><g fill="#fff"><rect x="515.6" y="358.7" width="6" height="3.1" rx="1.6"></rect><rect x="548.2" y="358.7" width="6" height="3.1" rx="1.6"></rect><rect x="557.4" y="358.7" width="6" height="3.1" rx="1.6"></rect><rect x="524.5" y="358.5" width="20.8" height="3.1" rx="1.6"></rect><rect x="567.8" y="358.5" width="20.8" height="3.1" rx="1.6"></rect><rect x="524.3" y="365.8" width="6" height="3.1" rx="1.6"></rect><rect x="556.8" y="365.8" width="6" height="3.1" rx="1.6"></rect><rect x="566" y="365.8" width="6" height="3.1" rx="1.6"></rect><rect x="533.2" y="365.5" width="20.8" height="3.1" rx="1.6"></rect><rect x="576.5" y="365.5" width="20.8" height="3.1" rx="1.6"></rect><rect x="533" y="372.8" width="6" height="3.1" rx="1.6"></rect><rect x="565.5" y="372.8" width="6" height="3.1" rx="1.6"></rect><rect x="574.7" y="372.8" width="6" height="3.1" rx="1.6"></rect><rect x="541.8" y="372.6" width="20.8" height="3.1" rx="1.6"></rect><rect x="585.2" y="372.6" width="20.8" height="3.1" rx="1.6"></rect><rect x="541.6" y="379.9" width="6" height="3.1" rx="1.6"></rect><rect x="574.2" y="379.9" width="6" height="3.1" rx="1.6"></rect><rect x="583.4" y="379.9" width="6" height="3.1" rx="1.6"></rect><rect x="550.5" y="379.6" width="20.8" height="3.1" rx="1.6"></rect><rect x="548.2" y="407.9" width="6" height="3.1" rx="1.6"></rect><rect x="557.4" y="407.9" width="6" height="3.1" rx="1.6"></rect><rect x="567.8" y="408.2" width="20.8" height="3.1" rx="1.6"></rect><rect x="515.6" y="407.9" width="6" height="3.1" rx="1.6"></rect><rect x="524.5" y="408.2" width="20.8" height="3.1" rx="1.6"></rect><rect x="524.3" y="400.9" width="6" height="3.1" rx="1.6"></rect><rect x="556.8" y="400.9" width="6" height="3.1" rx="1.6"></rect><rect x="566" y="400.9" width="6" height="3.1" rx="1.6"></rect><rect x="533.2" y="401.1" width="20.8" height="3.1" rx="1.6"></rect><rect x="533" y="393.8" width="6" height="3.1" rx="1.6"></rect><rect x="565.5" y="393.8" width="6" height="3.1" rx="1.6"></rect><rect x="574.7" y="393.8" width="6" height="3.1" rx="1.6"></rect><rect x="541.8" y="394.1" width="20.8" height="3.1" rx="1.6"></rect><rect x="541.6" y="386.8" width="6" height="3.1" rx="1.6"></rect><rect x="574.2" y="386.8" width="6" height="3.1" rx="1.6"></rect><rect x="583.4" y="386.8" width="6" height="3.1" rx="1.6"></rect><rect x="550.5" y="387" width="20.8" height="3.1" rx="1.6"></rect></g><path d="M505 490.5l-13.3-21 42-33.4 17.3-19.2c4.6-5 11.5-7.3 18.2-6s12 6.3 14.2 12.7h0c3.2 9.8-2 20.4-11.6 24l-27.3 10z" fill="#ffb6b6"></path><path d="M191.7 337.5V440h72V337.5c0-1.5-1-3-2.4-3.3-.3-.1-.7-.2-1-.2h-65c-1 0-1.8.4-2.5 1s-1 1.5-1 2.4zm28 35.2c0-4.2 3.5-7.6 7.7-7.6s7.6 3.4 7.7 7.6v12c0 4.2-3.4 7.6-7.7 7.6s-7.6-3.4-7.7-7.6z" fill="#2f2e41"></path><path d="M191.5 436.8v10c0 1 1 2 2 2H262c1 0 2-1 2-2v-10zM78.7 183v187.3a9 9 0 0 0 9 9h277.5a9 9 0 0 0 9-9V183a9 9 0 0 0-9-9H87.7a9 9 0 0 0-9 9z" fill="#3f3d56"></path><path d="M85.2 185.3V368c0 2.7 2.2 4.8 4.8 4.8h273c2.7 0 4.8-2.2 4.8-4.8V185.3c0-2.7-2.2-4.8-4.8-4.8H90c-2.7 0-4.8 2.2-4.8 4.8z" fill="#fff"></path><path d="M135.8 448c.6.7 1.4 1 2.3 1h162.3a3 3 0 0 0 2.9-3.6l-2.5-12a3 3 0 0 0-1.9-2.2c-.3-.1-.7-.2-1-.2H140.6c-.4 0-.7.1-1 .2a3 3 0 0 0-1.9 2.2l-2.5 12a3 3 0 0 0 .6 2.5z" fill="#2f2e41"></path><g fill="#3f3d56"><path d="M354 205.6H98.7c-.6 0-1-.5-1-1s.4-1 1-1H354c.6 0 1 .5 1 1s-.4 1-1 1z"></path><ellipse cx="116.1" cy="192.3" rx="6" ry="6.1"></ellipse><ellipse cx="136.6" cy="192.3" rx="6" ry="6.1"></ellipse><ellipse cx="157.2" cy="192.3" rx="6" ry="6.1"></ellipse><use xlink:href="#B"></use><use xlink:href="#B" y="4.2"></use><use xlink:href="#B" y="8.2"></use></g><path d="M693.6 441c1 2.6 3.4 4.4 6.2 4.3l26.5-.7c2.8-.1 5.2-2 6-4.7l3.7-40c1.3.6 2.8 1 4.2 1 5.3-.1 9.5-4.6 9.4-10s-4.6-9.5-10-9.4c-.6 0-1.2.1-1.7.2-1.3-1.4-3-2-5-2l-40.8 1c-.3 0-.7.1-1 .1-1.8.3-3.4 1.4-4.3 3s-1 3.5-.6 5.2zm43.2-43.8l2.7-9.6c.3-1 .3-2.3 0-3.4.1 0 .2-.1.4-.1 3.8-.1 7 3 7 6.7s-3 7-6.7 7c-1.2 0-2.4-.2-3.4-.8z" fill="#2f2e41"></path><path d="M691.4 380.8c1 5 10.6 8.5 22.4 7.8 10.8-.5 19.6-4.3 21.2-8.8a6 6 0 0 0-1.8-.2l-40.8 1c-.3 0-.7.1-1 .1z" fill="#3f3d56"></path><g fill="#6c63ff"><path d="M716 419c.1 0 .1 0 .2-.1l5.8-3.8c.1-.1.2-.2.2-.4s-.1-.3-.2-.4l-6-4c-.1-.1-.3-.1-.5 0s-.3.2-.3.4.1.3.2.4l5.3 3.5-5 3.3c-.2.1-.3.4-.2.6s.3.3.6.3zm-9.2.5c.2-.1.3-.2.4-.4s-.1-.4-.2-.5l-5.3-3 5-3.8c.1-.1.2-.3.2-.5s-.1-.3-.3-.4-.4 0-.5.1l-5.7 4.3c-.1.1-.2.3-.2.4s.1.3.3.4l6 3.4c.1.1.2.1.4.1zm8.5 3s.1 0 .1-.1c.1-.1.2-.2.2-.3s0-.3-.1-.4l-8.2-13.4c-.1-.2-.5-.3-.7-.2s-.3.5-.2.7l8.2 13.4c.1.2.3.3.5.2z"></path><rect x="209.4" y="260.8" width="50.7" height="10.8" rx="3.3"></rect></g><g fill="#e6e6e6"><rect x="183.6" y="282.5" width="102.2" height="10.8" rx="3.3"></rect><rect x="183.6" y="304.2" width="102.2" height="10.8" rx="3.3"></rect></g><g fill="#3f3d56"><path d="M290.7 376.8l.2.7h0l6.5 19.8 7.5 23 14 43 .1 6.7h0l1 53.7-3 7.3 3.3 12s-1.5-18-9.6-7.7c-4.6 6-10 12-14.3 17.6q9.6 4 19.5 7l4.3 1.3q.5.1 1 .3a267 267 0 0 0 67.4 10.8l3.5.1h1.2 3.8q4 0 7.7-.1a267 267 0 0 0 56.1-7.6l-1-26c-.2-4.6-5.4-9.7-5.7-14.5-.2-3.7 4.4-7 4-10.8-1.6-22.8-3.5-14-5-30.2q-.2-2.4-.4-4.6l-1.6-17 6-38.7 9.6-60.7-.7-1.2-.8-.4-50.8-25.2-2.8-7a11 11 0 0 0-10.1-6.9l-33.5-.1c-3.5 0-6.8 1.7-9 4.5l-9 12.6z"></path><path d="M326.8 453.7l-7.6 16.2-5.2 11-9 46.6-4.5 4.7-3.8-16.8-40 9c-1.3-7.3-.4.2-1.2-7.8l.7-.7c.6-.6 1.2-1.2 1.2-1.7-.5-27.6 1-74.5 12.3-103a60 60 0 0 1 7-13.1l.7-1 13.3-19.8h0l.1-.1 32.4-17.2 1.4 39 1 28zm117 4.6l9.5 20.3 3.3 7 9 46.6 4.4 4.7 3.8-16.8 1.8-.4L508 513l9.5 30a18 18 0 0 0-3.3-22.5c-.6-.6-1.2-1.2-1.2-1.7.5-32.4-1.4-91.7-19.4-116-5.7-7.7-9-15.4-14-20.8l-12-19.8-.7-1.2-.8-.4z"></path></g><circle cx="386.4" cy="267.2" r="44.6" fill="#ffb6b6"></circle><path d="M446.6 236c-.7-.7-1.7-1.2-2.7-1.2l.7-2c.4-1.2.2-2.5-.6-3.5s-2-1.4-3.4-1.2l-2.4.5.2-1.6c.2-1.2-.3-2.5-1.3-3.3s-2.3-1-3.5-.6c-1 .4-2.3.3-3.2-.2-1-.5-1.7-1.5-2-2.6l-1-4-.1-.2c-4-7-12-12-21.8-13.8-8.7-1.6-17.6-.8-26 0-3.4.3-7.2.7-10.4 2.6-2.7 1.7-5 5-4.5 8.4-8.5-2.6-17.5 2.6-22 9-5.3 7.8-6.2 17.5-6.3 25-.4 18 3.3 32.7 11 43.7.6.8.7 2.5 1.8 3v-.4c1.2.6 2.5 1.6 2 2.7-1.4 3 7.6 10 14 12a88 88 0 0 0 37.6 2.3l.4-2.6c4-.5 6.6-1.5 7.4-3l3.5-3.2h0v-.1c5-4.7 6-7.3 6.5-11.4.5-4-.4-8-1.3-11.6 18.7 3-7.4-20 10-24.4.2-.1.4-.1.6-.1l1.5-.4c2.4-.6 4.6-1.6 6.7-3 5-3 6.5-7 9-11.4.7-1.3.6-3-.4-4zM544 461.4v7.2q0 .6 0 1.3l-.5 15.4v1l-1.5 29c-1.4 24.7-4 3.4-6.3 12l-.4 1.5a28 28 0 0 1-1.9 6.3l-4 2.3a281 281 0 0 1-11.5 6.1l-6.6 3.2-1 .5a271 271 0 0 1-34.7 13.3 241 241 0 0 1-7 2l-7.4 2a267 267 0 0 1-56.1 7.6l-7.7.1h-3.8-1.2l-3.5-.1a270 270 0 0 1-67.4-10.8l-1-.3-4.3-1.3q-10-3-19.5-7-7.3-3-14.5-6.3s-.1 0-.1-.1l-3-1.4c-.1-.1-.3-.1-.4-.2q-5.6-2.7-11-5.7c-3-7-7.4-8.4-10-14.6a26 26 0 0 1-1.7-5.7v-.1c.3 3.7-1.2-6.6 0 0v-.4-1.4c-3.4-33.5-3.2-71.8-4.7-103.4q-.2-3-.3-6l-.1-1.8.2-.5a1 1 0 0 1 .1-.1l.1-.2v-.1s0-.1.1-.1l.3-.4.1-.2c0-.1.1-.1.1-.1l.1-.1v-.1s0-.1.1-.1c.1-.1.2-.2.3-.2l1-1 .4-.3c1-.6 2-1 3.2-1.5.4-.1.8-.3 1.2-.4l.4-.1h.7c1-.3 2.4-.6 3.7-1l.5-.1.7-.1 1-.2c3-.5 6.3-.8 10-1q.5 0 1-.1h1.2 1 1l3-.1h9.5l4.8.1h.3l4.3.2c1 0 2 .1 3 .2l3 .2h2.3 2l1 .1 1.5.1 3.3.3 3.4.3 3.4.3h.3l3 .3.7.1 3 .3h1l2.4.3 3.2.4 2.4.3 4 .5 1.5.2L357 403a869 869 0 0 1 17.4 2.6q8.8 1.4 17.7 3l4.5.8q1 .2 2 .4l3.5.6 3.5.7 4 .8 27 5.7 4.3 1q4.3 1 8.6 2l2.3.6 5.7 1.5h.3a224 224 0 0 1 4.1 1q4.8 1.3 9.5 2.5 3 1 6 1.7l8.8 2.6 2 .6 6.2 2 4.7 1.6q2.3.8 4.5 1.6l2.8 1 4 1.5 1.2.5.7.3 1.4.6 1.4.6 1.4.6 1.3.6 1 .5 2 1 1 .5.8.4.3.2c.3.1.5.3.8.4.6.3 1 .6 1.7.8l2.2 1 2 1h.3l.5.3 1.5 1 2.7 1.8.6.4 1.8 1.3c.2.1.4.3.6.4.1.1.3.3.5.4l1.4 1.3.4.4c.1 0 .1.1.2.2l.6.6s0 .1.1.1l.7.8c.1.1.2.3.3.4l.3.5.3.4.5 1 .3.8c.1.3.1.5.2.8z" fill="#2f2e41"></path><path d="M544 461.4v7.2 1.3l-.5 15.4v1l-1.5 29c-1.4 24.7-4 3.4-6.3 12L513 514.3q-2.2-1.2-4.4-2.5c-16-9-34-18.4-52.8-27.7l-2.2-1L326 427.4l-21-7.2c-14-4.4-25.8-7.5-35-9-9.6-1.4-16.2-1-19 2q-.2-3-.3-6-.1-1-.1-1.8c.1-.2.1-.3.2-.5 0 0 0 0 0-.1a1 1 0 0 1 .1-.1l.1-.2c0-.1.1-.1.1-.2l.3-.4.3-.3c0 0 .1-.1.1-.1l.1-.1c0 0 0-.1.1-.1.1-.1.2-.2.3-.2l1-1 .4-.3c1-.6 2-1 3.2-1.5.4-.1.8-.3 1.2-.4l.4-.1.7-.2c1-.3 2.4-.6 3.7-1l1.2-.2 1-.2c3-.5 6.3-.8 10-1q.5 0 1-.1h1.2c.4 0 .7 0 1 0 .4 0 .7 0 1 0l3-.1h9.5l4.8.1h.3l4.3.2c1 0 2 .1 3 .2l3 .2h2.3l2 .1 2.4.2 3.3.3 3.4.3 3.4.3h.3l3 .3q8.7 1 18 2 5.5.7 11.2 1.5l17.4 2.6q8.8 1.4 17.7 3l4.5.8q2.8.5 5.5 1l3.5.7 4 .8 27 5.7 4.3 1q4.3 1 8.6 2l2.3.6q3 .7 5.7 1.4h0 .3a409 409 0 0 1 4.1 1.1q4.8 1.3 9.5 2.5l6 1.7 8.8 2.6 2 .6q3 1 6.2 2l4.7 1.6q2.3.8 4.5 1.6l2.8 1 4 1.5 1.2.5 2 1 1.4.6 1.3.6 1.3.6 1 .5 2 1 1 .5.8.4.3.2a115 115 0 0 1 2.5 1.2l2.2 1 2.4 1.3.5.3 1.5 1 2.7 1.8 2.4 1.7 1 .8 1.4 1.3c.1.1.3.3.4.4.1 0 .1.1.2.2l.6.7.7.8c.1.1.2.3.3.4l.3.5.3.4c.2.4.4.7.5 1 .1.3.2.5.3.8.1.3.1.5.2.8z" opacity=".2"></path><defs><path id="B" d="M341.6 187.8H327c-.6 0-1 .5-1 1s.5 1 1 1h14.6c.6 0 1-.5 1-1s-.5-1-1-1z"></path></defs></svg></div>
+		<div class="metadata-text"><p style="display: flex; margin: 0; align-self: end;"><span style="font-weight: 600;">By Duaibeom</span>
+				<span style="color: #57606a; margin-left: auto;">Feb. 2, 2023</span></p>
+			<ul class="tag" style="justify-self: end; align-self: start;"><li>ML</li><li>keyword</li></ul></div></div>
+	
+
+	<div class="base-grid"><div class="grid-toc"><div class="toc"><!-- HTML_TAG_START --><h4>Contents</h4><p class="toc-h3"><a href="#roles">Roles</a></p><p class="toc-h3"><a href="#ai-product-development-cycle">AI Product Development Cycle</a></p><p class="toc-h2"><a href="#main-challenges">Main Challenges</a></p><p class="toc-h3"><a href="#data-preprocessing">Data Preprocessing</a></p><p class="toc-h3"><a href="#training">Training</a></p><p class="toc-h3"><a href="#evaluation">Evaluation</a></p><p class="toc-h2"><a href="#math">Math</a></p><p class="toc-h3"><a href="#linear-algebra">Linear Algebra</a></p><p class="toc-h3"><a href="#probability">Probability</a></p><p class="toc-h3"><a href="#statistics">Statistics</a></p><p class="toc-h2"><a href="#framework">Framework</a></p><p class="toc-h2"><a href="#base-of-ml">Base of ML</a></p><p class="toc-h3"><a href="#architectures">Architectures</a></p><p class="toc-h3"><a href="#layers">Layers</a></p><p class="toc-h3"><a href="#technic">Technic</a></p><p class="toc-h2"><a href="#tasks">Tasks</a></p><p class="toc-h2"><a href="#models">Models</a></p><p class="toc-h3"><a href="#support-vector-machines">Support Vector Machines</a></p><p class="toc-h3"><a href="#decision-trees">Decision Trees</a></p><p class="toc-h3"><a href="#ensemble-learning-and-random-forests">Ensemble Learning and Random Forests</a></p><p class="toc-h3"><a href="#dimensionality-reduction">Dimensionality Reduction</a></p><p class="toc-h3"><a href="#clustering">Clustering</a></p><p class="toc-h3"><a href="#autoencoder">Autoencoder</a></p><p class="toc-h3"><a href="#generative-adversarial-networks">Generative Adversarial Networks</a></p><p class="toc-h3"><a href="#reinforcement-learning">Reinforcement Learning</a></p><p class="toc-h3"><a href="#diffusion-models">Diffusion Models</a></p><p class="toc-h2"><a href="#service">Service</a></p><p class="toc-h3"><a href="#cloud-service">Cloud Service</a></p><p class="toc-h3"><a href="#drug-discovery-service">Drug Discovery Service</a></p><!-- HTML_TAG_END --></div></div>
+		
+
+		<div class="grid-article"><!-- HTML_TAG_START --><h3 id="roles">Roles<a href="#roles" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li><p>Data Analysis</p>
+<ul>
+<li>Data Scientist</li>
+</ul>
+</li>
+<li><p>Model Development</p>
+<ul>
+<li>AI Researcher</li>
+<li>AI Specialist</li>
+<li>AI Engineer</li>
+</ul>
+</li>
+<li><p>Service (Production)</p>
+<ul>
+<li>AI Engineer</li>
+<li>MLOps</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="ai-product-development-cycle">AI Product Development Cycle<a href="#ai-product-development-cycle" class="anchor"><span class="visually-hidden">#</span></a></h3><ol>
+<li>Clearly define the problem and goals<ul>
+<li>target audience, key stakeholders, data and resources</li>
+</ul>
+</li>
+<li>Collect and analyze data<ul>
+<li>Acquire high-quality and relevant data.</li>
+<li>Perform exploratory data analysis(EDA) <em>to understand the distribution, patterns, and anomalies in the data</em>.</li>
+<li>Determine the data split between training, validation, and testing.</li>
+</ul>
+</li>
+<li>Prepare the dataset<ul>
+<li>clean, preprocess, transform, missing or imcomplete, imbalance</li>
+<li>Ensure that the data is properly formatted and <em>normalized</em>.</li>
+</ul>
+</li>
+<li>Choose and train an appropriate model<ul>
+<li>Consider the trade-off between model complexity and interpretability.</li>
+<li>Ensure that the model is scalable and can handle large datasets.</li>
+<li>loss function, optimization algorithm</li>
+<li>Monitor and adjust the model</li>
+</ul>
+</li>
+<li>Evaluate the model’s performance with appropriate metrics</li>
+<li>Refine and optimize the model<ul>
+<li>Compare the model’s performance on the test data with its performance on the validation data.</li>
+</ul>
+</li>
+<li>Deploy the model<ul>
+<li>Make sure that it is integrated with the other systems and processes as needed.</li>
+</ul>
+</li>
+<li>Monitor and maintain the model’s performance.<ul>
+<li>Monitor the model’s performance in real-world conditions, and adjust as necessary.</li>
+<li>Continuously evaluate the model’s performance and make improvements as needed.</li>
+</ul>
+</li>
+</ol>
+<h2 id="main-challenges">Main Challenges<a href="#main-challenges" class="anchor"><span class="visually-hidden">#</span></a></h2><h3 id="data-preprocessing">Data Preprocessing<a href="#data-preprocessing" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Insufficient Quantity of Data</li>
+<li>Nonrepresentative Data</li>
+<li>Poor-Quality Data</li>
+<li>Imbalanced data<ul>
+<li>Oversampling</li>
+<li>Undersampling</li>
+<li>Generating synthetic</li>
+</ul>
+</li>
+<li>Irrelevant Features</li>
+</ul>
+<h3 id="training">Training<a href="#training" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Overfitting<ul>
+<li>Dropout</li>
+<li>Monte Carlo (MC) Dropout</li>
+<li>Regularization</li>
+</ul>
+</li>
+<li>Underfitting</li>
+<li>The Vanishing/Exploding Gradients Problems<ul>
+<li>Glorot and He Initialization</li>
+<li>Better Activation Functions</li>
+<li>Batch Normalization</li>
+<li>Gradient Clipping</li>
+</ul>
+</li>
+<li>Hyperparameter tuning<ul>
+<li>Grid search</li>
+<li>Random search</li>
+<li>Bayesian optimization</li>
+</ul>
+</li>
+</ul>
+<h3 id="evaluation">Evaluation<a href="#evaluation" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Explainable AI (XAI)</li>
+<li>Data Mismatch in Testing and Validating</li>
+</ul>
+<hr>
+<h2 id="math">Math<a href="#math" class="anchor"><span class="visually-hidden">#</span></a></h2><ul>
+<li>Softmax</li>
+</ul>
+<h3 id="linear-algebra">Linear Algebra<a href="#linear-algebra" class="anchor"><span class="visually-hidden">#</span></a></h3><p>Vector, Matrix(Tensor)</p>
+<h3 id="probability">Probability<a href="#probability" class="anchor"><span class="visually-hidden">#</span></a></h3><h3 id="statistics">Statistics<a href="#statistics" class="anchor"><span class="visually-hidden">#</span></a></h3><hr>
+<h2 id="framework">Framework<a href="#framework" class="anchor"><span class="visually-hidden">#</span></a></h2><ul>
+<li><p>Dataset and Dataloader</p>
+</li>
+<li><p>Optimizer</p>
+</li>
+<li><p>Multi-GPU</p>
+</li>
+<li><p>Monitoring</p>
+<ul>
+<li>Weights &amp; Biases</li>
+<li>Tensorboard</li>
+</ul>
+</li>
+<li><p>Neural Network</p>
+<ul>
+<li><strong>PyTorch</strong>; PyG</li>
+<li><strong>JAX</strong>; Flax, Jraph</li>
+<li><strong>TensorFlow</strong>;</li>
+</ul>
+</li>
+<li><p>Accelerator</p>
+<ul>
+<li>TPU: XLA, ?</li>
+<li>GPU: CUDA, Triton</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="base-of-ml">Base of ML<a href="#base-of-ml" class="anchor"><span class="visually-hidden">#</span></a></h2><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">Θ</mi><mo>∗</mo></msup><mo>←</mo><mi mathvariant="normal">Θ</mi><mo>−</mo><mi>η</mi><msub><mi mathvariant="normal">∇</mi><mi mathvariant="normal">Θ</mi></msub><mi mathvariant="script">L</mi></mrow><annotation encoding="application/x-tex">\Theta^* \larr \Theta - \eta\nabla_{\Theta}{\cal L}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6887em;"></span><span class="mord"><span class="mord">Θ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">←</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">Θ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span><span class="mord"><span class="mord">∇</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">Θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mord mathcal">L</span></span></span></span></span></span></p>
+<aside>
+
+<ul>
+<li><p>Data</p>
+<ul>
+<li>Dataset</li>
+<li>Dataloader</li>
+</ul>
+</li>
+<li><p>Model</p>
+<ul>
+<li>Backbone</li>
+<li>Neck</li>
+<li>Head</li>
+<li>Loss</li>
+</ul>
+</li>
+<li><p>Optimizer</p>
+<ul>
+<li>Scheduler</li>
+</ul>
+</li>
+</ul>
+</aside>
+
+<ul>
+<li><p>Gradient Descent  </p>
+</li>
+<li><p>Constraints?</p>
+</li>
+</ul>
+<p><strong>Activation Functions</strong></p>
+<p><strong>Weight Initializers</strong></p>
+<p><strong>Metric</strong></p>
+<ul>
+<li>Confusion Matrices<ul>
+<li>Decision Boundaries</li>
+</ul>
+</li>
+<li>Precision and Recall, and it’s Trade-off</li>
+<li>ROC Curve</li>
+<li>F1</li>
+</ul>
+<p><strong>Loss</strong> (Cost)</p>
+<ul>
+<li>MSE, MAE</li>
+<li>Cross Entropy<ul>
+<li>KL divergence</li>
+<li>Focal</li>
+</ul>
+</li>
+</ul>
+<p><strong>Backpropagation</strong></p>
+<ul>
+<li>Autodiff (AutoGrad)</li>
+</ul>
+<p><strong>Optimizers</strong></p>
+<ul>
+<li>Momentum, Nesterov Accelerated Gradient, AdaGrad, RMSProp, Adam, AdaMax, Nadam, AdamW</li>
+</ul>
+<p><strong>Learning Rate Scheduler</strong></p>
+<p><strong>Computational Complexity</strong></p>
+<p><strong>Regularization</strong></p>
+<ul>
+<li><p>The Normal Equation</p>
+</li>
+<li><p>Regularized Models</p>
+<ul>
+<li>Ridge Regression</li>
+<li>Lasso Regression</li>
+<li>Elastic Net Regression</li>
+<li>Early Stopping</li>
+</ul>
+</li>
+<li><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\ell_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\ell_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">ℓ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> Regularization</p>
+</li>
+<li><p>Max-Norm Regularization</p>
+</li>
+<li><p>Estimating Probabilities ?</p>
+</li>
+</ul>
+<h3 id="architectures">Architectures<a href="#architectures" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li><p>1-Stage Detector</p>
+</li>
+<li><p>2-Stage Detector</p>
+</li>
+<li><p>AutoML</p>
+</li>
+</ul>
+<h3 id="layers">Layers<a href="#layers" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li><p>Linear Layers</p>
+</li>
+<li><p>Convolutional Layers</p>
+<ul>
+<li>CNN</li>
+</ul>
+</li>
+<li><p>Recurrent Neurons</p>
+<ul>
+<li>LSTM, GRU</li>
+</ul>
+</li>
+<li><p><strong>Attention Mechanisms</strong></p>
+<ul>
+<li>Transformer<ul>
+<li>Attention Is All You Need: The Original Transformer Architecture</li>
+</ul>
+</li>
+<li>Vision Transformers</li>
+</ul>
+</li>
+<li><p>Pooling Layers</p>
+<ul>
+<li>Avg, Max</li>
+</ul>
+</li>
+<li><p>Normalization Layers</p>
+</li>
+<li><p>Dropout</p>
+</li>
+<li><p>Neural architecture search (NAS)</p>
+</li>
+<li><p>Optimization</p>
+<ul>
+<li>Tensor Decomposition</li>
+<li>Quantization</li>
+<li>Model Compression<ul>
+<li>Knowledge distillation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="technic">Technic<a href="#technic" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li><p>Using GPUs to Speed Up Computations</p>
+<ul>
+<li>Getting Your Own GPU</li>
+<li>Managing the GPU RAM</li>
+<li>Placing Operations and Variables on Devices</li>
+<li>Parallel Execution Across Multiple Devices</li>
+</ul>
+</li>
+<li><p>Training Models Across Multiple Devices</p>
+<ul>
+<li>Model Parallelism</li>
+<li>Data Parallelism</li>
+</ul>
+</li>
+</ul>
+<h2 id="tasks">Tasks<a href="#tasks" class="anchor"><span class="visually-hidden">#</span></a></h2><ul>
+<li><p>Supervise, Un-supervise, Semi-supervise</p>
+</li>
+<li><p>Instance-Based vs. Model-Based Learning</p>
+</li>
+<li><p>Classification</p>
+</li>
+<li><p>Regression</p>
+</li>
+<li><p>Annotation</p>
+</li>
+<li><p>Computer Vision (CV)</p>
+<ul>
+<li>Classification and Localization</li>
+<li>Object Detection</li>
+<li>Object Tracking</li>
+<li>Semantic Segmentation</li>
+<li>Optical Character Recognition(OCR)</li>
+</ul>
+</li>
+<li><p>Natural Language Processing (NLP)</p>
+<ul>
+<li>Bag of Words &amp; Word Embedding</li>
+<li>Forecasting a Time Series</li>
+<li>Handling Long Sequences<br>  -Fighting the Unstable Gradients Problem<br>  -Tackling the Short-Term Memory Problem</li>
+<li>Sentiment Analysis<ul>
+<li>Masking</li>
+<li>Reusing Pretrained Embeddings and Language Models</li>
+</ul>
+</li>
+<li>An Encoder-Decoder Network for Neural Machine Translation<ul>
+<li>Bidirectional RNNs</li>
+<li>Beam Search</li>
+</ul>
+</li>
+<li>KLUE</li>
+<li>MRC</li>
+<li>Summarize</li>
+<li>Generative<ul>
+<li>GPT</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>RecSys</p>
+</li>
+<li><p>Multi-modal Learning</p>
+</li>
+</ul>
+<h2 id="models">Models<a href="#models" class="anchor"><span class="visually-hidden">#</span></a></h2><ul>
+<li>X-AI</li>
+</ul>
+<h3 id="support-vector-machines">Support Vector Machines<a href="#support-vector-machines" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Linear SVM Classification<ul>
+<li>Soft Margin Classification</li>
+</ul>
+</li>
+<li>Nonlinear SVM Classification<ul>
+<li>Polynomial Kernel</li>
+<li>Similarity Features</li>
+<li>Gaussian RBF Kernel</li>
+<li>SVM Classes and Computational Complexity</li>
+</ul>
+</li>
+<li>SVM Regression</li>
+<li>Under the Hood of Linear SVM Classifiers</li>
+<li>The Dual Problem<ul>
+<li>Kernelized SVMs</li>
+</ul>
+</li>
+</ul>
+<h3 id="decision-trees">Decision Trees<a href="#decision-trees" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>The CART Training Algorithm</li>
+<li>Gini Impurity or Entropy?</li>
+<li>Regularization Hyperparameters</li>
+<li>Sensitivity to Axis Orientation</li>
+<li>Decision Trees Have a High Variance</li>
+</ul>
+<h3 id="ensemble-learning-and-random-forests">Ensemble Learning and Random Forests<a href="#ensemble-learning-and-random-forests" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Voting Classifiers</li>
+<li>Bagging and Pasting<ul>
+<li>Out-of-Bag Evaluation</li>
+</ul>
+</li>
+<li>Random Forests<ul>
+<li>Feature Importance</li>
+</ul>
+</li>
+<li>Boosting</li>
+<li>Stacking</li>
+</ul>
+<h3 id="dimensionality-reduction">Dimensionality Reduction<a href="#dimensionality-reduction" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Projection</li>
+<li>Manifold Learning</li>
+<li>PCA</li>
+<li>LLE</li>
+</ul>
+<h3 id="clustering">Clustering<a href="#clustering" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>k-means and DBSCAN</li>
+<li>Gaussian Mixtures<ul>
+<li>Using Gaussian Mixtures for Anomaly Detection</li>
+</ul>
+</li>
+</ul>
+<h3 id="autoencoder">Autoencoder<a href="#autoencoder" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Efficient Data Representations</li>
+<li>Performing PCA with an Undercomplete Linear Autoencoder</li>
+<li>Stacked Autoencoders</li>
+<li>Convolutional Autoencoders</li>
+<li>Denoising Autoencoders</li>
+<li>Sparse Autoencoders</li>
+<li>Variational Autoencoders</li>
+</ul>
+<h3 id="generative-adversarial-networks">Generative Adversarial Networks<a href="#generative-adversarial-networks" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>The Difficulties of Training GANs</li>
+<li>Deep Convolutional GANs</li>
+<li>Progressive Growing of GANs</li>
+<li>StyleGANs</li>
+</ul>
+<h3 id="reinforcement-learning">Reinforcement Learning<a href="#reinforcement-learning" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li>Rewards</li>
+<li>Policy Search</li>
+<li>Neural Network Policies</li>
+<li>Evaluating Actions: The Credit Assignment Problem</li>
+<li>Policy Gradients</li>
+<li>Markov Decision Processes</li>
+<li>Temporal Difference Learning</li>
+<li>Q-Learning<ul>
+<li>Exploration Policies</li>
+<li>Approximate Q-Learning and Deep Q-Learning</li>
+</ul>
+</li>
+<li>Implementing Deep Q-Learning</li>
+<li>Deep Q-Learning Variants<ul>
+<li>Fixed Q-value Targets</li>
+<li>Double DQN</li>
+<li>Prioritized Experience Replay</li>
+<li>Dueling DQN</li>
+</ul>
+</li>
+</ul>
+<h3 id="diffusion-models">Diffusion Models<a href="#diffusion-models" class="anchor"><span class="visually-hidden">#</span></a></h3><h2 id="service">Service<a href="#service" class="anchor"><span class="visually-hidden">#</span></a></h2><h3 id="cloud-service">Cloud Service<a href="#cloud-service" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li><p>Microsoft Azure</p>
+</li>
+<li><p>Google Cloud services: Vertex AI</p>
+</li>
+<li><p>AWS</p>
+</li>
+<li><p>Cloudflare</p>
+</li>
+</ul>
+<h3 id="drug-discovery-service">Drug Discovery Service<a href="#drug-discovery-service" class="anchor"><span class="visually-hidden">#</span></a></h3><ul>
+<li><p>Isomorphic Labs, DeepMind</p>
+</li>
+<li><p>Insilico medicien</p>
+</li>
+</ul>
+<hr>
+<p>Reference:</p>
+<ol>
+<li>homl, 2nd ed.</li>
+</ol>
+<!-- HTML_TAG_END --></div>
+		</div>
+
+	<div class="controls svelte-1wai065"><ul class="svelte-1wai065"><li class="prev svelte-1wai065"><span class="svelte-1wai065 faded">previous</span>
+			</li>
+
+		<li class="next svelte-1wai065"><span class="svelte-1wai065">next</span>
+			<a href="/ml/ml_resources">ML Study Resources</a></li></ul>
+</div>
+
+	<script src="https://giscus.app/client.js" data-repo="duaibeom/duaibeom.github.io" data-repo-id="R_kgDOGXam8A" data-category="General" data-category-id="DIC_kwDOGXam8M4COJSN" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en" crossorigin="anonymous" async></script></div>
+
+	<footer><ul><li style="color: white;">© 2019 - 2023 Duaibeom Blog.</li>
+		<li style="color: grey;">Powered by Svelte-kit(static) &amp; GitHub Pages</li></ul>
+	<ul style="margin-left: auto;"><li><a href="/" style="color: #959da5;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" class="d-block" height="20"><path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" fill="currentColor"></path></svg></a></li>
+		<li><a href="https://github.com/duaibeom" style="color: #959da5;"><svg height="20" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"></path></svg></a></li></ul></footer></body>
+
+
+			
+			<script>
+				{
+					__sveltekit_1kwx0yh = {
+						env: {},
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
+
+					const data = [null,{"type":"data","data":{prev:false,next:{slug:"ml\u002Fml_resources",title:"ML Study Resources"},section:{file:"ml\u002F01-ml_overview.md",title:"ML Overview",date:"Feb. 2, 2023",summary:void 0,tag:["ML","keyword"],toc:"\u003Ch4\u003EContents\u003C\u002Fh4\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#roles\"\u003ERoles\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#ai-product-development-cycle\"\u003EAI Product Development Cycle\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#main-challenges\"\u003EMain Challenges\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#data-preprocessing\"\u003EData Preprocessing\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#training\"\u003ETraining\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#evaluation\"\u003EEvaluation\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#math\"\u003EMath\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#linear-algebra\"\u003ELinear Algebra\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#probability\"\u003EProbability\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#statistics\"\u003EStatistics\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#framework\"\u003EFramework\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#base-of-ml\"\u003EBase of ML\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#architectures\"\u003EArchitectures\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#layers\"\u003ELayers\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#technic\"\u003ETechnic\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#tasks\"\u003ETasks\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#models\"\u003EModels\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#support-vector-machines\"\u003ESupport Vector Machines\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#decision-trees\"\u003EDecision Trees\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#ensemble-learning-and-random-forests\"\u003EEnsemble Learning and Random Forests\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#dimensionality-reduction\"\u003EDimensionality Reduction\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#clustering\"\u003EClustering\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#autoencoder\"\u003EAutoencoder\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#generative-adversarial-networks\"\u003EGenerative Adversarial Networks\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#reinforcement-learning\"\u003EReinforcement Learning\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#diffusion-models\"\u003EDiffusion Models\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h2\"\u003E\u003Ca href=\"#service\"\u003EService\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#cloud-service\"\u003ECloud Service\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003Cp class=\"toc-h3\"\u003E\u003Ca href=\"#drug-discovery-service\"\u003EDrug Discovery Service\u003C\u002Fa\u003E\u003C\u002Fp\u003E",body:"\u003Ch3 id=\"roles\"\u003ERoles\u003Ca href=\"#roles\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EData Analysis\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EData Scientist\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EModel Development\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EAI Researcher\u003C\u002Fli\u003E\n\u003Cli\u003EAI Specialist\u003C\u002Fli\u003E\n\u003Cli\u003EAI Engineer\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EService (Production)\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EAI Engineer\u003C\u002Fli\u003E\n\u003Cli\u003EMLOps\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Chr\u003E\n\u003Ch3 id=\"ai-product-development-cycle\"\u003EAI Product Development Cycle\u003Ca href=\"#ai-product-development-cycle\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Col\u003E\n\u003Cli\u003EClearly define the problem and goals\u003Cul\u003E\n\u003Cli\u003Etarget audience, key stakeholders, data and resources\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003ECollect and analyze data\u003Cul\u003E\n\u003Cli\u003EAcquire high-quality and relevant data.\u003C\u002Fli\u003E\n\u003Cli\u003EPerform exploratory data analysis(EDA) \u003Cem\u003Eto understand the distribution, patterns, and anomalies in the data\u003C\u002Fem\u003E.\u003C\u002Fli\u003E\n\u003Cli\u003EDetermine the data split between training, validation, and testing.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EPrepare the dataset\u003Cul\u003E\n\u003Cli\u003Eclean, preprocess, transform, missing or imcomplete, imbalance\u003C\u002Fli\u003E\n\u003Cli\u003EEnsure that the data is properly formatted and \u003Cem\u003Enormalized\u003C\u002Fem\u003E.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EChoose and train an appropriate model\u003Cul\u003E\n\u003Cli\u003EConsider the trade-off between model complexity and interpretability.\u003C\u002Fli\u003E\n\u003Cli\u003EEnsure that the model is scalable and can handle large datasets.\u003C\u002Fli\u003E\n\u003Cli\u003Eloss function, optimization algorithm\u003C\u002Fli\u003E\n\u003Cli\u003EMonitor and adjust the model\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EEvaluate the model’s performance with appropriate metrics\u003C\u002Fli\u003E\n\u003Cli\u003ERefine and optimize the model\u003Cul\u003E\n\u003Cli\u003ECompare the model’s performance on the test data with its performance on the validation data.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EDeploy the model\u003Cul\u003E\n\u003Cli\u003EMake sure that it is integrated with the other systems and processes as needed.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EMonitor and maintain the model’s performance.\u003Cul\u003E\n\u003Cli\u003EMonitor the model’s performance in real-world conditions, and adjust as necessary.\u003C\u002Fli\u003E\n\u003Cli\u003EContinuously evaluate the model’s performance and make improvements as needed.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Fol\u003E\n\u003Ch2 id=\"main-challenges\"\u003EMain Challenges\u003Ca href=\"#main-challenges\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Ch3 id=\"data-preprocessing\"\u003EData Preprocessing\u003Ca href=\"#data-preprocessing\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EInsufficient Quantity of Data\u003C\u002Fli\u003E\n\u003Cli\u003ENonrepresentative Data\u003C\u002Fli\u003E\n\u003Cli\u003EPoor-Quality Data\u003C\u002Fli\u003E\n\u003Cli\u003EImbalanced data\u003Cul\u003E\n\u003Cli\u003EOversampling\u003C\u002Fli\u003E\n\u003Cli\u003EUndersampling\u003C\u002Fli\u003E\n\u003Cli\u003EGenerating synthetic\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EIrrelevant Features\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"training\"\u003ETraining\u003Ca href=\"#training\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EOverfitting\u003Cul\u003E\n\u003Cli\u003EDropout\u003C\u002Fli\u003E\n\u003Cli\u003EMonte Carlo (MC) Dropout\u003C\u002Fli\u003E\n\u003Cli\u003ERegularization\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EUnderfitting\u003C\u002Fli\u003E\n\u003Cli\u003EThe Vanishing\u002FExploding Gradients Problems\u003Cul\u003E\n\u003Cli\u003EGlorot and He Initialization\u003C\u002Fli\u003E\n\u003Cli\u003EBetter Activation Functions\u003C\u002Fli\u003E\n\u003Cli\u003EBatch Normalization\u003C\u002Fli\u003E\n\u003Cli\u003EGradient Clipping\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EHyperparameter tuning\u003Cul\u003E\n\u003Cli\u003EGrid search\u003C\u002Fli\u003E\n\u003Cli\u003ERandom search\u003C\u002Fli\u003E\n\u003Cli\u003EBayesian optimization\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"evaluation\"\u003EEvaluation\u003Ca href=\"#evaluation\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EExplainable AI (XAI)\u003C\u002Fli\u003E\n\u003Cli\u003EData Mismatch in Testing and Validating\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Chr\u003E\n\u003Ch2 id=\"math\"\u003EMath\u003Ca href=\"#math\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Cul\u003E\n\u003Cli\u003ESoftmax\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"linear-algebra\"\u003ELinear Algebra\u003Ca href=\"#linear-algebra\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cp\u003EVector, Matrix(Tensor)\u003C\u002Fp\u003E\n\u003Ch3 id=\"probability\"\u003EProbability\u003Ca href=\"#probability\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Ch3 id=\"statistics\"\u003EStatistics\u003Ca href=\"#statistics\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Chr\u003E\n\u003Ch2 id=\"framework\"\u003EFramework\u003Ca href=\"#framework\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EDataset and Dataloader\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EOptimizer\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EMulti-GPU\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EMonitoring\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EWeights &amp; Biases\u003C\u002Fli\u003E\n\u003Cli\u003ETensorboard\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ENeural Network\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cstrong\u003EPyTorch\u003C\u002Fstrong\u003E; PyG\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cstrong\u003EJAX\u003C\u002Fstrong\u003E; Flax, Jraph\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cstrong\u003ETensorFlow\u003C\u002Fstrong\u003E;\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EAccelerator\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ETPU: XLA, ?\u003C\u002Fli\u003E\n\u003Cli\u003EGPU: CUDA, Triton\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Chr\u003E\n\u003Ch2 id=\"base-of-ml\"\u003EBase of ML\u003Ca href=\"#base-of-ml\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Cp\u003E\u003Cspan class=\"katex\"\u003E\u003Cspan class=\"katex-mathml\"\u003E\u003Cmath xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1998\u002FMath\u002FMathML\"\u003E\u003Csemantics\u003E\u003Cmrow\u003E\u003Cmsup\u003E\u003Cmi mathvariant=\"normal\"\u003EΘ\u003C\u002Fmi\u003E\u003Cmo\u003E∗\u003C\u002Fmo\u003E\u003C\u002Fmsup\u003E\u003Cmo\u003E←\u003C\u002Fmo\u003E\u003Cmi mathvariant=\"normal\"\u003EΘ\u003C\u002Fmi\u003E\u003Cmo\u003E−\u003C\u002Fmo\u003E\u003Cmi\u003Eη\u003C\u002Fmi\u003E\u003Cmsub\u003E\u003Cmi mathvariant=\"normal\"\u003E∇\u003C\u002Fmi\u003E\u003Cmi mathvariant=\"normal\"\u003EΘ\u003C\u002Fmi\u003E\u003C\u002Fmsub\u003E\u003Cmi mathvariant=\"script\"\u003EL\u003C\u002Fmi\u003E\u003C\u002Fmrow\u003E\u003Cannotation encoding=\"application\u002Fx-tex\"\u003E\\Theta^* \\larr \\Theta - \\eta\\nabla_{\\Theta}{\\cal L}\u003C\u002Fannotation\u003E\u003C\u002Fsemantics\u003E\u003C\u002Fmath\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"katex-html\" aria-hidden=\"true\"\u003E\u003Cspan class=\"base\"\u003E\u003Cspan class=\"strut\" style=\"height:0.6887em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mord\"\u003E\u003Cspan class=\"mord\"\u003EΘ\u003C\u002Fspan\u003E\u003Cspan class=\"msupsub\"\u003E\u003Cspan class=\"vlist-t\"\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.6887em;\"\u003E\u003Cspan style=\"top:-3.063em;margin-right:0.05em;\"\u003E\u003Cspan class=\"pstrut\" style=\"height:2.7em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"sizing reset-size6 size3 mtight\"\u003E\u003Cspan class=\"mbin mtight\"\u003E∗\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mspace\" style=\"margin-right:0.2778em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mrel\"\u003E←\u003C\u002Fspan\u003E\u003Cspan class=\"mspace\" style=\"margin-right:0.2778em;\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"base\"\u003E\u003Cspan class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mord\"\u003EΘ\u003C\u002Fspan\u003E\u003Cspan class=\"mspace\" style=\"margin-right:0.2222em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mbin\"\u003E−\u003C\u002Fspan\u003E\u003Cspan class=\"mspace\" style=\"margin-right:0.2222em;\"\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"base\"\u003E\u003Cspan class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mord mathnormal\" style=\"margin-right:0.03588em;\"\u003Eη\u003C\u002Fspan\u003E\u003Cspan class=\"mord\"\u003E\u003Cspan class=\"mord\"\u003E∇\u003C\u002Fspan\u003E\u003Cspan class=\"msupsub\"\u003E\u003Cspan class=\"vlist-t vlist-t2\"\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.3283em;\"\u003E\u003Cspan style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"\u003E\u003Cspan class=\"pstrut\" style=\"height:2.7em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"sizing reset-size6 size3 mtight\"\u003E\u003Cspan class=\"mord mtight\"\u003E\u003Cspan class=\"mord mtight\"\u003EΘ\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"vlist-s\"\u003E​\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.15em;\"\u003E\u003Cspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mord\"\u003E\u003Cspan class=\"mord\"\u003E\u003Cspan class=\"mord mathcal\"\u003EL\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fp\u003E\n\u003Caside\u003E\n\n\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EData\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EDataset\u003C\u002Fli\u003E\n\u003Cli\u003EDataloader\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EModel\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EBackbone\u003C\u002Fli\u003E\n\u003Cli\u003ENeck\u003C\u002Fli\u003E\n\u003Cli\u003EHead\u003C\u002Fli\u003E\n\u003Cli\u003ELoss\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EOptimizer\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EScheduler\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Faside\u003E\n\n\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EGradient Descent  \u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EConstraints?\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003E\u003Cstrong\u003EActivation Functions\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003EWeight Initializers\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003EMetric\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EConfusion Matrices\u003Cul\u003E\n\u003Cli\u003EDecision Boundaries\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EPrecision and Recall, and it’s Trade-off\u003C\u002Fli\u003E\n\u003Cli\u003EROC Curve\u003C\u002Fli\u003E\n\u003Cli\u003EF1\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003E\u003Cstrong\u003ELoss\u003C\u002Fstrong\u003E (Cost)\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EMSE, MAE\u003C\u002Fli\u003E\n\u003Cli\u003ECross Entropy\u003Cul\u003E\n\u003Cli\u003EKL divergence\u003C\u002Fli\u003E\n\u003Cli\u003EFocal\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003E\u003Cstrong\u003EBackpropagation\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EAutodiff (AutoGrad)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003E\u003Cstrong\u003EOptimizers\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EMomentum, Nesterov Accelerated Gradient, AdaGrad, RMSProp, Adam, AdaMax, Nadam, AdamW\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003E\u003Cstrong\u003ELearning Rate Scheduler\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003EComputational Complexity\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cp\u003E\u003Cstrong\u003ERegularization\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EThe Normal Equation\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ERegularized Models\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ERidge Regression\u003C\u002Fli\u003E\n\u003Cli\u003ELasso Regression\u003C\u002Fli\u003E\n\u003Cli\u003EElastic Net Regression\u003C\u002Fli\u003E\n\u003Cli\u003EEarly Stopping\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Cspan class=\"katex\"\u003E\u003Cspan class=\"katex-mathml\"\u003E\u003Cmath xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1998\u002FMath\u002FMathML\"\u003E\u003Csemantics\u003E\u003Cmrow\u003E\u003Cmsub\u003E\u003Cmi mathvariant=\"normal\"\u003Eℓ\u003C\u002Fmi\u003E\u003Cmn\u003E1\u003C\u002Fmn\u003E\u003C\u002Fmsub\u003E\u003C\u002Fmrow\u003E\u003Cannotation encoding=\"application\u002Fx-tex\"\u003E\\ell_1\u003C\u002Fannotation\u003E\u003C\u002Fsemantics\u003E\u003C\u002Fmath\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"katex-html\" aria-hidden=\"true\"\u003E\u003Cspan class=\"base\"\u003E\u003Cspan class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mord\"\u003E\u003Cspan class=\"mord\"\u003Eℓ\u003C\u002Fspan\u003E\u003Cspan class=\"msupsub\"\u003E\u003Cspan class=\"vlist-t vlist-t2\"\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.3011em;\"\u003E\u003Cspan style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"\u003E\u003Cspan class=\"pstrut\" style=\"height:2.7em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"sizing reset-size6 size3 mtight\"\u003E\u003Cspan class=\"mord mtight\"\u003E1\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"vlist-s\"\u003E​\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.15em;\"\u003E\u003Cspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E and \u003Cspan class=\"katex\"\u003E\u003Cspan class=\"katex-mathml\"\u003E\u003Cmath xmlns=\"http:\u002F\u002Fwww.w3.org\u002F1998\u002FMath\u002FMathML\"\u003E\u003Csemantics\u003E\u003Cmrow\u003E\u003Cmsub\u003E\u003Cmi mathvariant=\"normal\"\u003Eℓ\u003C\u002Fmi\u003E\u003Cmn\u003E2\u003C\u002Fmn\u003E\u003C\u002Fmsub\u003E\u003C\u002Fmrow\u003E\u003Cannotation encoding=\"application\u002Fx-tex\"\u003E\\ell_2\u003C\u002Fannotation\u003E\u003C\u002Fsemantics\u003E\u003C\u002Fmath\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"katex-html\" aria-hidden=\"true\"\u003E\u003Cspan class=\"base\"\u003E\u003Cspan class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"mord\"\u003E\u003Cspan class=\"mord\"\u003Eℓ\u003C\u002Fspan\u003E\u003Cspan class=\"msupsub\"\u003E\u003Cspan class=\"vlist-t vlist-t2\"\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.3011em;\"\u003E\u003Cspan style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"\u003E\u003Cspan class=\"pstrut\" style=\"height:2.7em;\"\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"sizing reset-size6 size3 mtight\"\u003E\u003Cspan class=\"mord mtight\"\u003E2\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"vlist-s\"\u003E​\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003Cspan class=\"vlist-r\"\u003E\u003Cspan class=\"vlist\" style=\"height:0.15em;\"\u003E\u003Cspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E\u003C\u002Fspan\u003E Regularization\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EMax-Norm Regularization\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EEstimating Probabilities ?\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"architectures\"\u003EArchitectures\u003Ca href=\"#architectures\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003E1-Stage Detector\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E2-Stage Detector\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EAutoML\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"layers\"\u003ELayers\u003Ca href=\"#layers\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003ELinear Layers\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EConvolutional Layers\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ECNN\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ERecurrent Neurons\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ELSTM, GRU\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003E\u003Cstrong\u003EAttention Mechanisms\u003C\u002Fstrong\u003E\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ETransformer\u003Cul\u003E\n\u003Cli\u003EAttention Is All You Need: The Original Transformer Architecture\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EVision Transformers\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EPooling Layers\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EAvg, Max\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ENormalization Layers\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EDropout\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ENeural architecture search (NAS)\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EOptimization\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003ETensor Decomposition\u003C\u002Fli\u003E\n\u003Cli\u003EQuantization\u003C\u002Fli\u003E\n\u003Cli\u003EModel Compression\u003Cul\u003E\n\u003Cli\u003EKnowledge distillation\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"technic\"\u003ETechnic\u003Ca href=\"#technic\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EUsing GPUs to Speed Up Computations\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EGetting Your Own GPU\u003C\u002Fli\u003E\n\u003Cli\u003EManaging the GPU RAM\u003C\u002Fli\u003E\n\u003Cli\u003EPlacing Operations and Variables on Devices\u003C\u002Fli\u003E\n\u003Cli\u003EParallel Execution Across Multiple Devices\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ETraining Models Across Multiple Devices\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EModel Parallelism\u003C\u002Fli\u003E\n\u003Cli\u003EData Parallelism\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch2 id=\"tasks\"\u003ETasks\u003Ca href=\"#tasks\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003ESupervise, Un-supervise, Semi-supervise\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EInstance-Based vs. Model-Based Learning\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EClassification\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ERegression\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EAnnotation\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EComputer Vision (CV)\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EClassification and Localization\u003C\u002Fli\u003E\n\u003Cli\u003EObject Detection\u003C\u002Fli\u003E\n\u003Cli\u003EObject Tracking\u003C\u002Fli\u003E\n\u003Cli\u003ESemantic Segmentation\u003C\u002Fli\u003E\n\u003Cli\u003EOptical Character Recognition(OCR)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ENatural Language Processing (NLP)\u003C\u002Fp\u003E\n\u003Cul\u003E\n\u003Cli\u003EBag of Words &amp; Word Embedding\u003C\u002Fli\u003E\n\u003Cli\u003EForecasting a Time Series\u003C\u002Fli\u003E\n\u003Cli\u003EHandling Long Sequences\u003Cbr\u003E  -Fighting the Unstable Gradients Problem\u003Cbr\u003E  -Tackling the Short-Term Memory Problem\u003C\u002Fli\u003E\n\u003Cli\u003ESentiment Analysis\u003Cul\u003E\n\u003Cli\u003EMasking\u003C\u002Fli\u003E\n\u003Cli\u003EReusing Pretrained Embeddings and Language Models\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EAn Encoder-Decoder Network for Neural Machine Translation\u003Cul\u003E\n\u003Cli\u003EBidirectional RNNs\u003C\u002Fli\u003E\n\u003Cli\u003EBeam Search\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EKLUE\u003C\u002Fli\u003E\n\u003Cli\u003EMRC\u003C\u002Fli\u003E\n\u003Cli\u003ESummarize\u003C\u002Fli\u003E\n\u003Cli\u003EGenerative\u003Cul\u003E\n\u003Cli\u003EGPT\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ERecSys\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EMulti-modal Learning\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch2 id=\"models\"\u003EModels\u003Ca href=\"#models\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Cul\u003E\n\u003Cli\u003EX-AI\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"support-vector-machines\"\u003ESupport Vector Machines\u003Ca href=\"#support-vector-machines\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003ELinear SVM Classification\u003Cul\u003E\n\u003Cli\u003ESoft Margin Classification\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003ENonlinear SVM Classification\u003Cul\u003E\n\u003Cli\u003EPolynomial Kernel\u003C\u002Fli\u003E\n\u003Cli\u003ESimilarity Features\u003C\u002Fli\u003E\n\u003Cli\u003EGaussian RBF Kernel\u003C\u002Fli\u003E\n\u003Cli\u003ESVM Classes and Computational Complexity\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003ESVM Regression\u003C\u002Fli\u003E\n\u003Cli\u003EUnder the Hood of Linear SVM Classifiers\u003C\u002Fli\u003E\n\u003Cli\u003EThe Dual Problem\u003Cul\u003E\n\u003Cli\u003EKernelized SVMs\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"decision-trees\"\u003EDecision Trees\u003Ca href=\"#decision-trees\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EThe CART Training Algorithm\u003C\u002Fli\u003E\n\u003Cli\u003EGini Impurity or Entropy?\u003C\u002Fli\u003E\n\u003Cli\u003ERegularization Hyperparameters\u003C\u002Fli\u003E\n\u003Cli\u003ESensitivity to Axis Orientation\u003C\u002Fli\u003E\n\u003Cli\u003EDecision Trees Have a High Variance\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"ensemble-learning-and-random-forests\"\u003EEnsemble Learning and Random Forests\u003Ca href=\"#ensemble-learning-and-random-forests\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EVoting Classifiers\u003C\u002Fli\u003E\n\u003Cli\u003EBagging and Pasting\u003Cul\u003E\n\u003Cli\u003EOut-of-Bag Evaluation\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003ERandom Forests\u003Cul\u003E\n\u003Cli\u003EFeature Importance\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EBoosting\u003C\u002Fli\u003E\n\u003Cli\u003EStacking\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"dimensionality-reduction\"\u003EDimensionality Reduction\u003Ca href=\"#dimensionality-reduction\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EProjection\u003C\u002Fli\u003E\n\u003Cli\u003EManifold Learning\u003C\u002Fli\u003E\n\u003Cli\u003EPCA\u003C\u002Fli\u003E\n\u003Cli\u003ELLE\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"clustering\"\u003EClustering\u003Ca href=\"#clustering\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003Ek-means and DBSCAN\u003C\u002Fli\u003E\n\u003Cli\u003EGaussian Mixtures\u003Cul\u003E\n\u003Cli\u003EUsing Gaussian Mixtures for Anomaly Detection\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"autoencoder\"\u003EAutoencoder\u003Ca href=\"#autoencoder\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EEfficient Data Representations\u003C\u002Fli\u003E\n\u003Cli\u003EPerforming PCA with an Undercomplete Linear Autoencoder\u003C\u002Fli\u003E\n\u003Cli\u003EStacked Autoencoders\u003C\u002Fli\u003E\n\u003Cli\u003EConvolutional Autoencoders\u003C\u002Fli\u003E\n\u003Cli\u003EDenoising Autoencoders\u003C\u002Fli\u003E\n\u003Cli\u003ESparse Autoencoders\u003C\u002Fli\u003E\n\u003Cli\u003EVariational Autoencoders\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"generative-adversarial-networks\"\u003EGenerative Adversarial Networks\u003Ca href=\"#generative-adversarial-networks\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003EThe Difficulties of Training GANs\u003C\u002Fli\u003E\n\u003Cli\u003EDeep Convolutional GANs\u003C\u002Fli\u003E\n\u003Cli\u003EProgressive Growing of GANs\u003C\u002Fli\u003E\n\u003Cli\u003EStyleGANs\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"reinforcement-learning\"\u003EReinforcement Learning\u003Ca href=\"#reinforcement-learning\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003ERewards\u003C\u002Fli\u003E\n\u003Cli\u003EPolicy Search\u003C\u002Fli\u003E\n\u003Cli\u003ENeural Network Policies\u003C\u002Fli\u003E\n\u003Cli\u003EEvaluating Actions: The Credit Assignment Problem\u003C\u002Fli\u003E\n\u003Cli\u003EPolicy Gradients\u003C\u002Fli\u003E\n\u003Cli\u003EMarkov Decision Processes\u003C\u002Fli\u003E\n\u003Cli\u003ETemporal Difference Learning\u003C\u002Fli\u003E\n\u003Cli\u003EQ-Learning\u003Cul\u003E\n\u003Cli\u003EExploration Policies\u003C\u002Fli\u003E\n\u003Cli\u003EApproximate Q-Learning and Deep Q-Learning\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003EImplementing Deep Q-Learning\u003C\u002Fli\u003E\n\u003Cli\u003EDeep Q-Learning Variants\u003Cul\u003E\n\u003Cli\u003EFixed Q-value Targets\u003C\u002Fli\u003E\n\u003Cli\u003EDouble DQN\u003C\u002Fli\u003E\n\u003Cli\u003EPrioritized Experience Replay\u003C\u002Fli\u003E\n\u003Cli\u003EDueling DQN\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"diffusion-models\"\u003EDiffusion Models\u003Ca href=\"#diffusion-models\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Ch2 id=\"service\"\u003EService\u003Ca href=\"#service\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh2\u003E\u003Ch3 id=\"cloud-service\"\u003ECloud Service\u003Ca href=\"#cloud-service\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EMicrosoft Azure\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EGoogle Cloud services: Vertex AI\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EAWS\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003ECloudflare\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch3 id=\"drug-discovery-service\"\u003EDrug Discovery Service\u003Ca href=\"#drug-discovery-service\" class=\"anchor\"\u003E\u003Cspan class=\"visually-hidden\"\u003E#\u003C\u002Fspan\u003E\u003C\u002Fa\u003E\u003C\u002Fh3\u003E\u003Cul\u003E\n\u003Cli\u003E\u003Cp\u003EIsomorphic Labs, DeepMind\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Cp\u003EInsilico medicien\u003C\u002Fp\u003E\n\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Chr\u003E\n\u003Cp\u003EReference:\u003C\u002Fp\u003E\n\u003Col\u003E\n\u003Cli\u003Ehoml, 2nd ed.\u003C\u002Fli\u003E\n\u003C\u002Fol\u003E\n"}},"uses":{"params":["path","slug"]}}];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.515f0d26.js"),
+						import("../_app/immutable/entry/app.8b861ad3.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_1kwx0yh.element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

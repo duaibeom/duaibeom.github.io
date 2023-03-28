@@ -1,0 +1,180 @@
+header {
+    background: rgba(0, 0, 0, 0.1);
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.title {
+    font-family: 'DejaVu Serif';
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 2px 8px;
+}
+
+.links {
+    font-family: sans-serif;
+    margin: auto 8px auto auto;
+    font-weight: 500;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links li {
+    margin-left: 16px;
+}
+
+.links a {
+    display: block;
+    position: relative;
+    padding: 3px;
+}
+
+.links a::before {
+    content: '';
+    position: absolute;
+    transition: transform 0.4s cubic-bezier(0.4, 1, 0.4, 1);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scaleX(0);
+}
+
+.links a:hover::before {
+    transform: scaleX(1);
+}
+
+.title a {
+    opacity: 1;
+    transition: font-size 0.4s cubic-bezier(0.4, 1, 0.4, 1);
+}
+
+.title a:hover {
+    opacity: 0.7;
+}html {
+    font-size: 16px;
+}
+
+@media (min-width: 128px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 432px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+
+body {
+    /* footer stay at bottom */
+    /* https://stackoverflow.com/a/67846892 */
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+
+    font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+
+    /* background-color: #f5f5f5; */
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+blockquote {
+    color: #6f6f6f;
+    padding-left: 10px;
+    margin: 1rem 0;
+    border-left: .2rem solid #ddd;
+}
+
+hr {
+    margin: 16px 0;
+    color: #ede8e4;
+    opacity: 0.7;
+}
+
+.contents {
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0 10px;
+}
+
+.visually-hidden {
+    position: absolute;
+    padding-left: 2px;
+    opacity: 0.1;
+    transition: opacity .4s ease;
+}
+
+.visually-hidden:hover {
+    opacity: 0.7;
+}
+
+/* https://stackoverflow.com/a/67846892 */
+footer {
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+    background-color: #21262d;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+svg {
+    max-width: 90%;
+}
+
+footer svg {
+    height: 1.2rem;
+    transition: opacity .4s ease;
+}
+
+footer svg:hover {
+    opacity: 0.7;
+}
+
+footer li {
+    float: left;
+    padding: 0 10px;
+}
